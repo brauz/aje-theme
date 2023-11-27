@@ -338,8 +338,11 @@
                     </button>
                   {% endif %}
 
-                  {% unless product.tags contains 'label: coming soon' %}
+                  <div data-dotapparel21-module="Test"></div>
 
+                  {% unless product.tags contains 'label: coming soon' %}
+                    <div data-dotapparel21-module="FindInStoreButton"></div>
+                    <div class="find-in-store-text">{{ section.settings.find_in_store_text }}</div>
                   {% endunless %}
 
                   {% if section.settings.enable_payment_button %}
@@ -349,7 +352,6 @@
               {% endform %}
             </div>
           </div>
-
           <div class="add-to-section-message">
             {{ section.settings.add_to_section_message }}
           </div>
