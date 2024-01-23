@@ -4832,6 +4832,7 @@ theme.Product = (function() {
     this._setActiveThumbnail();
     this._addToCartPopupItem();
     theme.MiniCart.addToCartModal();
+    window.Product_showErrorMessage = this._showErrorMessage.bind(this);
   }
 
   Product.prototype = _.assignIn({}, Product.prototype, {
