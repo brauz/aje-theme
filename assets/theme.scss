@@ -4294,6 +4294,21 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
       margin: auto;
       margin-bottom: 7px;
     }
+
+    .ready-for-pickup {
+      color: #000;
+      font-family: canada-type-gibson;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0;
+      margin-top: 32px;
+      margin-bottom: 8px;
+    }
   }
 
   .mobile-gallery + .product-option-info{
