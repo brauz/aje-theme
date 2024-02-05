@@ -316,6 +316,10 @@
               {% assign bis = true %}
             {% endif %}
             {% if bis == false %}
+              <div class="add-to-section-message">
+                {{section.settings.add_to_section_message}}
+              </div>
+
               <button type="submit" name="add"
                 {% unless current_variant.available %} aria-disabled="true"{% endunless %}
                 aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
@@ -372,10 +376,6 @@
     </div>
 
     {%- render 'brauz-find-in-store', bis: bis -%}
-
-    <div class="add-to-section-message">
-      {{section.settings.add_to_section_message}}
-    </div>
 
     {% include 'get-the-look', product: product%}
 
