@@ -334,6 +334,10 @@
               </button>
 
               <button class="btn product-notify-me-btn klaviyo-bis-trigger" href="#">Notify Me</button>
+
+              <div class="add-to-section-message">
+                {{section.settings.add_to_section_message}}
+              </div>          
             {% endif %}
 
             {% if bis %}
@@ -372,10 +376,6 @@
     </div>
 
     {%- render 'brauz-find-in-store', bis: bis -%}
-
-    <div class="add-to-section-message">
-      {{section.settings.add_to_section_message}}
-    </div>
 
     {% include 'get-the-look', product: product%}
 
