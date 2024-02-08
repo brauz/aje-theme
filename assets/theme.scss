@@ -4294,6 +4294,20 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
       margin: auto;
       margin-top: 7px;
     }
+
+    .ready-for-pickup {
+      color: #000;
+      font-family: canada-type-gibson;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0;
+      margin-top: 12px;
+    }
   }
 
   .mobile-gallery + .product-option-info{
@@ -5807,7 +5821,7 @@ button#BIS_trigger:not([data-bis-trigger]) {
   text-transform: uppercase;
   height: 50px;
 
-  [data-add-to-cart-text] {
+  [data-add-to-cart-text], [data-find-in-store-text] {
     position: relative;
     &::before {
       content: "";
@@ -5831,6 +5845,11 @@ button#BIS_trigger:not([data-bis-trigger]) {
         background: #000000;
       }
     }
+  }
+
+  &.find-in-store {
+    max-width: 190px;
+    margin: 60px auto 0;
   }
 
   .product-single--small-image &,
